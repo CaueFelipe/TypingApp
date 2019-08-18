@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Digitação TESTE</title>
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-2" id="menu_lateral">
+                <div id="titulo">
+                    <h1>DIGITAÇÃO</h1>
+                </div>
+                <div class="btn-group-vertical col-12">
+                    <button type="button" class="btn btn-info" id="1" onclick="iniciar(1);">FASE 1</button>
+                    <button type="button" class="btn btn-info" id="2" onclick="iniciar(2);" disabled>FASE 2</button>
+                    <button type="button" class="btn btn-info" id="3" onclick="iniciar(3);" disabled>FASE 3</button>
+                    <button type="button" class="btn btn-info" id="4" onclick="iniciar(4);" disabled>FASE 4</button>
+                    <button type="button" class="btn btn-info" id="5" onclick="iniciar(5);" disabled>FASE 5</button>
+                    <button type="button" class="btn btn-info" id="6" onclick="iniciar(6);" disabled>FASE 6</button>
+                    <button type="button" class="btn btn-info" id="7" onclick="iniciar(7);" disabled>FASE 7</button>
+                    <button type="button" class="btn btn-info" id="8" onclick="iniciar(8);" disabled>FASE 8</button>
+                    <button type="button" class="btn btn-info" id="9" onclick="iniciar(9);" disabled>FASE 9</button>
+                    <button type="button" class="btn btn-info" id="10" onclick="iniciar(10);" disabled>FASE 10</button>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="row" id="header">
+                    <div class="col-9">
+                        <div id="digitacao_texto">
+                            <h1 id="texto"></h1>
+                        </div>
+                        <div>
+                            <div id="digitacao_letra">
+                                <h1 id="letra"></h1>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning" id="aviso" hidden>
+                            Para iniciar, selecione uma fase.
+                        </div>
+                        <div class="alert alert-success" id="sucesso" hidden>
+                            Parabéns! Selecione a próxima fase para continuar.
+                        </div>
+                        <div class="alert alert-danger" id="fracasso" hidden>
+                            Que pena, não foi dessa vez. Reinicie esta fase.
+                        </div>
+                        <div id="completo">
+                            <p id="digitado"></p>
+                        </div>
+                    </div>
+                    <div class="col-3" id="controle">
+                        <div class="row">
+                            <div class="col-4" id="hora">00h</div>
+                            <div class="col-4" id="minuto">00m</div>
+                            <div class="col-4" id="segundo">00s</div>
+                        </div>
+                        <h1 id="erros">ERROS:</h1>
+                        <h1 id="repetir"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--img src="digitacao.png" class="img-thumbnail" alt="imagem ilustra a posição correta dos dedos ao digitar"-->
+    </footer>
+</body>
+<script src="bootstrap.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="index.js"></script>
+</html>

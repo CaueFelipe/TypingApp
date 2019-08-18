@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+    align-content: center;
+    text-align: center;
+}
+
+div {
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+
+#titulo {
+    padding: 20px;
+}
+
+#digitacao_texto {
+    padding: 10px;
+}
+
+#digitacao_letra {
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+    border-radius: 15px; 
+}
+
+#completo {
+    border: solid 1px black;
+    height: 400px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#sucesso, #fracasso, #aviso {
+    margin-top: 20px;
+}
